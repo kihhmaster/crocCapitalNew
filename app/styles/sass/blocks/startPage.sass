@@ -1,0 +1,897 @@
+.section__partnership--slider
+	width: 100%
+	position: relative
+	height: 100%
+	display: inline-block
+	margin-top: $gutter
+.partnership--slider
+	width: 100%
+	position: relative
+	height: 100%
+	// overflow: hidden
+.container 
+	width: 100%
+	max-width: 1200px
+	padding-left: $gutter
+	padding-right: $gutter
+	z-index: 5
+.partnership__slider--item
+	position: relative
+	width: 100%
+	height: 400px	
+	display: flex
+	justify-content: center
+	align-items: center
+.partnership__slider_wrapp--img
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-flow: row wrap
+	width: 100%
+	height: 400px
+.partnership__slider--img
+	display: flex
+	justify-content: center
+	align-items: center
+	position: relative
+	width: 200px
+	margin: 10px
+	z-index: 20	
+	&::before
+		position: absolute
+		top: 50%
+		left: 50%
+		z-index: 0
+		content: ''
+		width: 1px
+		height: 1px
+		border-radius: 50%
+		background: rgba(44,64,108,0.10)
+		box-shadow: 5px 5px 38px 90px rgba(44,64,108,0.25)
+.partnership__slider--img
+	.partnership__slider--img__litle
+		width: 140px
+			
+.partnership__slider--wrap	
+	display: flex
+body
+	background: #000
+.partnership--slider
+	.swiper-scrollbar
+		width: 100%
+		height: 2px
+		background: #171D29
+	.swiper-scrollbar-drag
+		width: 100%
+		height: 5px
+		background: linear-gradient(0.25turn, #A13786,  #6880C9)
+.swiper-horizontal>.swiper-scrollbar
+	top: 55px
+	margin-bottom: $gutter
+
+.partnership--slider--navigation
+	position: relative
+	margin-left: auto
+	width: 160px
+	height: 30px 
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-top: $gutter*2	
+	right: 0
+	.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after
+		content: none
+	.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after
+		content: none
+	.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction
+		position: relative
+		width: 50%
+		bottom: 0
+		.swiper-pagination-bullet
+			background: rgba(128, 43, 105, 0.664)
+		.swiper-pagination-bullet-active
+			background: #E741BC
+.partnership__slider--text
+	position: relative
+	width: 30%	
+.partnership__slider_text-slide
+	position: relative
+	width: 100%
+	height: 60px
+	z-index: 50
+	background: #c0b6b6
+	color: #fff
+	font-size: 36px
+	font-weight: bold
+.tabs
+	display: flex
+	width: 100%	
+	justify-content: center
+	align-items: center
+.slider--title
+	display: flex
+	width: 100%	
+	justify-content: center
+	align-items: center
+	font-size: 36px
+	font-weight: bold
+	color: rgba(94, 132, 210, 0.52)
+	margin-bottom: 10px
+.slider--title .slider--title--activ
+	color: #fff
+
+
+// section__help
+.section__help
+	position: relative
+	width: 100%
+	height: auto
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: $gutter*6
+.section__help__bg
+	position: absolute
+	left: 0
+	top: -100px
+.section__help__bg--img
+	width: 100%
+	height: 90%	
+.section__help_wrap
+	width: 100%
+	position: relative
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+.section__help--title
+	font-size: 36px
+	font-weight: bold
+	color: #fff
+	flex: 0 0 280px
+	width: 100%
+	height: auto
+.section__help--cards
+	background-image: url(../images/dist/section__help--cards_fon.svg)
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	display: flex
+	flex: 3 0 0
+	position: relative
+	justify-content: center
+	align-items: center
+	flex-flow: row wrap
+.section__help--card
+	width: 100%
+	max-width: 360px
+	margin: 0 0 40px 40px
+	height: 180px
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+	font-size: 28px
+	font-weight: bold
+.card__star--text
+	background-image: linear-gradient(0.25turn, #8B3375,  #5E84D2)
+	color: transparent
+	background-clip: text
+.section__help_card--star
+	display: flex
+	align-items: flex-start
+	justify-content: center
+	width: 100%
+	padding: 15px
+	position: relative
+	summary
+		height: 100%
+		width: 100%
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		list-style: none
+		animation: spoiler2 1.5s
+.section__help_card--star[open]
+	width: 105%
+	z-index: 50
+	animation: spoiler 1.5s
+
+
+.section__help_card-content
+	font-family: $userfont2
+	font-size: 16px
+	font-weight: 400 
+	color: rgba(255, 255, 255, 0.7)
+	margin-bottom: $gutter
+
+	&::before
+		content: url(../images/dist/section__help_card-content--icon.svg)
+		margin-right: 20px
+		
+.section__help_card--right
+	margin-top: $gutter*4
+	border-image: linear-gradient(0.25turn, #8B3375, #5E84D2)
+	border: 2px solid transparent
+	border-image-slice: 1
+.section__help_card--left
+	margin-top: -$gutter*4
+		
+// section__help--finish
+
+//section__team
+.section__team
+	position: relative
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: $gutter*6
+.section__team_persons
+	position: relative
+	width: 100%
+	height: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: center
+	margin-top: $gutter*5
+
+.section__team--title
+	position: absolute
+	top: 0
+	left: 30px
+h2 
+	color: #fff
+	font-weight: 700
+	font-size: 36px
+.section__team_persons--row
+	position: relative
+	width: 100%
+	height: 100%
+	display: flex
+	flex-flow: row nowrap
+	justify-content: flex-start
+	align-items: center
+	margin-bottom: $gutter*5
+.section__team_person
+	z-index: 10
+.section__team_persons--row
+	&:nth-child(2)
+		justify-content: flex-end
+.section__team_person
+	position: relative
+	width: 260px
+	height: 380px
+	display: flex
+	flex-flow: column nowrap
+	justify-content: space-between
+	align-items: center
+.team_reson--desc
+	margin-top: 10px
+	position: absolute
+	bottom: 0
+	right: 0
+	width: 100%
+	height: auto
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	font-family: $userfont2
+	align-items: center
+	text-align: center
+	font-size: 14px
+	color: rgba(255, 255, 255, 0.5)
+	font-weight: 300
+
+//section__team--finish
+
+.coroc
+	width: 100%
+	position: relative
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-flow:  column nowrap
+
+
+.icon_twit
+	mask-image: url(#{$assetImages}/icon_twit.svg)
+	width: 32px
+	height: 31px
+	background: #fff
+	mask-repeat: no-repeat
+	&:hover
+		background: $accent
+		transition: background .1s ease
+.icon_yout
+	mask-image: url(#{$assetImages}/icon_yout.svg)
+	width: 32px
+	height: 31px
+	background: #fff
+	mask-repeat: no-repeat
+	&:hover
+		background: $accent
+		transition: background .1s ease
+.icon_teleg 
+	mask-image: url(#{$assetImages}/icon_teleg.svg)
+	width: 32px
+	height: 31px
+	background: #fff
+	mask-repeat: no-repeat
+	&:hover
+		background: $accent
+		transition: background .1s ease
+
+.icon_in 
+	mask-image: url(#{$assetImages}/icon_in.svg)
+	width: 32px
+	height: 31px
+	background: #fff
+	mask-repeat: no-repeat
+	&:hover
+		background: $accent
+		transition: background .1s ease
+.peson__soc
+	position: relative
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+.peson__soc--icon
+	margin: 5px
+
+.person__name
+	text-align: center
+	font-size: 24px
+	font-weight: 400
+	color: #fff
+	text-transform: uppercase
+
+// .about__slider
+.section__about
+	position: relative
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: $gutter*6
+.section__about--title
+	position: absolute
+	top: 0
+	left: 30px
+.about__slider
+	margin-top: $gutter*3
+	position: relative
+	width: 100%
+	height: 450px
+	display: flex
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: center
+	.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after
+		content: none
+	.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after
+		content: none
+	.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction
+		position: relative
+		width: 50%
+		bottom: 0
+		.swiper-pagination-bullet
+			background: rgba(128, 43, 105, 0.664)
+		.swiper-pagination-bullet-active
+			background: #E741BC
+.swiper__about_slides
+	position: relative
+	width: 100%	
+.about__slide
+	display: flex
+	justify-content: center
+	align-items: center
+	overflow: hidden
+.about__slider--desc
+	position: relative
+	width: 100%
+	max-width: 500px
+	margin-right: 100px
+	margin-left: 100px
+	display: flex
+	flex-flow: column nowrap
+.about__slider_desc--title
+	font-size: 30px
+	font-weight: bold
+	color: #fff
+.person__profession
+	font-family: $userfont2
+	font-size: 16px
+	font-weight: 400
+	color: rgba(255, 255, 255, 0.5)
+	text-align: center
+.pesson__avatar
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-flow: column nowrap
+	text-align: center
+.about__slide
+	img
+		position: relative
+		display: inline-block
+		width: 100%
+		margin-left: 100px
+.about__slider_desc--content
+	font-family: $userfont2
+	font-size: 16px
+	font-weight: 400
+// .about__slider--finish
+
+
+// section__mediaRes
+.section__mediaRes
+	position: relative
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: $gutter*6
+.section__about--title
+	position: absolute
+	top: 0
+	left: 30px
+.section__mediaRes--cotent
+	position: relative
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-top: 75px
+.mediaRes__cotent--row
+	position: relative
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+.mediaRes__cotent--card
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+	margin-bottom: 90px
+.mediaRes__cotent__card--title
+	background-image: linear-gradient(0.25turn, #5E84D2,  #8B3375)
+	color: transparent
+	background-clip: text
+	img
+		margin-right: 20px
+.mediaRes__cotent__card--links
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-flow: row nowrap
+.mediaRes__cotent--link
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-flow: column nowrap
+	font-family: $userfont2
+	font-size: 12px
+	font-weight: 300
+	margin-right: 20px
+	width: 250px
+	height: 100px
+	background: rgba(23, 29, 41, 0.4)
+	fiter: blur(5px)
+	border-radius: 5px
+	margin-top: 25px
+	p
+		color: rgba(255, 255, 255, 0.5)
+		&:hover
+			color: $accent2
+			transition: color .1s ease
+.mediaRes__cotent--link
+	.mediaRes__cotent__link--title
+		font-family: $userfont
+		font-size: 18px
+		font-weight: 400
+		color: #fff
+		text-transform: uppercase
+		
+		
+
+// section__mediaRes--finish
+// .section__contact
+.section__contact
+	position: relative
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: $gutter*6
+	margin-bottom: $gutter
+.section__cotact_form
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-flow: column nowrap
+	margin-top: $gutter*2
+.contact_form-label
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-flow: row nowrap
+.contact_form-input
+	width: 100%
+	background: transparent
+	border: none
+	font-family: $userfont2
+	font-size: 16px
+	line-height: 1.1
+	border-bottom: 2px solid #232323 
+	color: rgba(255, 255, 255, 0.9)
+	margin-bottom: 90px
+	margin-right: 90px
+	padding-bottom: 20px
+
+.section__contact--title
+	position: absolute
+	top: 0
+	left: 30px
+	// .section__contact--finish
+
+
+//footer__content
+.footer__content
+	position: relative
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: $gutter*6
+	margin-bottom: $gutter
+.footer__menu
+	width: 100%
+	height: auto
+	display: flex
+	align-items: flex-start
+	justify-content: space-evenly
+	flex-flow: row nowrap
+.footer__menu--row
+	width: 100%
+	height: auto
+	display: flex
+	align-items: flex-start
+	justify-content: space-evenly
+	flex-flow: row nowrap
+.footer__menu--list
+	list-style-type: none
+	width: 100%
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	font-family: $userfont2
+	font-size: 10px
+	line-height: 160%
+	color: rgba(255, 255, 255, 0.5)
+	.footer__menu--item
+		font-family: $userfont2
+		font-size: 12px
+		line-height: 1.6
+		color: rgba(255, 255, 255, 0.5)
+		&:hover
+			color: $accent
+			transition: color .1s ease
+	.footer_munu--title
+		font-family: $userfont2
+		font-size: 22px
+		line-height: 1.6
+		color: #fff
+		margin-bottom: 16px   
+.footer__logo
+	width: 90px
+	display: inline-block
+	position: relative
+	margin-bottom: 45px
+.footer__menu--list
+	.peson__soc
+		display: flex
+		justify-content: flex-start
+		.peson__soc--icon
+			background: #808080
+			&:hover
+				background: $accent
+				transition: background .1s ease
+.footer_menu--tel
+	font-family: $userfont2
+	font-size: 18px
+	line-height: 1.6
+	color: #fff
+.icon_up 
+	mask-image: url(#{$assetImages}/startMain.svg)
+	width: 50px
+	height: 50px
+	background: #fff
+	mask-repeat: no-repeat
+	display: inline-block
+	position: relative
+	align-self: flex-end
+	&:hover
+		background: $accent
+		transition: background .1s ease
+.footer__menu--list-icon_up 
+	width: 60px
+	height: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: flex-end
+	align-self: end
+//footer__contentfinish
+.about__slide 
+	width: 100%
+	height: auto
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: flex-start
+//.section__welcome
+.section__welcome
+	position: relative
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: $gutter*6
+.section__welcome--content
+	position: relative
+	width: 100%
+	max-width: 500px
+	height: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+.section__welcome--title
+	margin-bottom: $gutter
+.section__welcome--desc
+	font-family: $userfont2
+	font-size: 16px
+	line-height: 1.6
+	color: #fff
+	margin-bottom: 40px
+.section__welcome--animation
+	img
+		width: 100%	
+//.section__welcome--finish
+.button--hidden
+	display: none
+.active
+	color: #fff
+	transition: color 2s ease
+
+//`@media (max-width: 1400px) { ...}
+@include media-breakpoint-down(xxl)
+	
+//`@media (max-width:  1200px) { ...}
+@include media-breakpoint-down(xl)
+	.contact_form-input
+		margin-right: 20px
+
+	.mediaRes__cotent__card--links
+		flex-flow: column wrap
+	.section__help_card--right
+		margin-top: 0
+	.about__slide 
+		img
+			margin-left: 20px
+	.section__help_card--left
+		margin-top: 0
+	.about__slider--desc
+		margin-left: 20px
+		margin-right: 30px
+//`@media (max-width: 992px) { ...}
+@include media-breakpoint-down(lg)
+
+//`@media (max-width: 768px) { ...}
+@include media-breakpoint-down(md)
+	.section__help_card--right
+		margin-top: 0
+	.about__slide
+		display: flex
+		justify-content: center
+		align-items: center
+		img
+			display: none
+	.section__help_card--left
+		margin-top: 0
+	.about__slider--desc
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+	.tabs
+		.slider--title
+			font-size: 24px
+			align-items: flex-end
+			margin-bottom: 0
+
+	.swiper-horizontal>.swiper-scrollbar
+		top: 35px 
+		margin-bottom: 0 
+	.tabs__container
+		display: flex
+		justify-content: center
+		align-items: flex-end
+	.partnership__slider--item, .partnership__slider_wrapp--img
+		width: 100%
+		height: auto !important
+	.partnership__slider--img
+		margin: 50px 10px !important
+	h2
+		font-size: 30px !important
+	.card__star--text
+		line-height: 1.3
+	.section__team_person
+		width: 200px
+		height: 330px
+	.pesson__avatar
+		img
+			width: 100%
+	.section__team_persons--row
+		justify-content: space-between
+		margin-bottom: 100px
+	.person__profession
+		line-height: 1.3
+	.section__team_persons--row:nth-child(2)
+		justify-content: space-between
+	.footer__menu--list-icon_up
+		display: none
+	.contact_form-input
+		margin-bottom: 60px
+	.section__cotact_form
+		margin-top: 40px
+	.footer__menu
+		justify-content: center
+		align-items: center
+		flex-flow: row wrap
+	.footer__menu--row
+		justify-content: center
+		align-items: center
+		margin-bottom: $gutter
+	.footer__menu--list
+		width: 100%
+
+//`@media (max-width: 576px) { ...}
+@include media-breakpoint-down(sm)
+	.partnership__slider_wrapp--img
+		flex-flow: column nowrap
+	.footer__menu--row
+		flex-flow: column wrap
+		justify-content: center
+		align-items: center
+	.footer__menu--list .peson__soc
+		justify-content: center
+		align-items: center
+		align-self: center
+	.footer__menu--list
+		justify-content: center
+		align-items: center
+		margin-bottom: $gutter
+	.footer__menu
+		flex-flow: column wrap
+	.section__cotact_form
+		margin-top: $gutter
+	.contact_form-input
+		margin-right: 0
+		margin-bottom: 70px
+	.contact_form-label
+		flex-flow: column wrap
+	.section__mediaRes--cotent
+		flex-flow: column wrap
+		justify-content: center
+		align-items: center
+	.mediaRes__cotent--row, .mediaRes__cotent--card
+		justify-content: center
+		align-items: center
+	.section__welcome
+		display: flex
+		flex-flow: column-reverse wrap
+	.section__welcome
+		margin-top: 0px
+	.section__welcome--content
+		justify-content: center
+		align-items: center
+		text-align: center
+	.about__slider_desc--title
+		font-size: 24px
+	.section__team_persons--row
+		flex-flow: row wrap
+	.section__team_person
+		width: 160px
+		height: 260px
+	.about__slider_desc--content
+		line-height: 1.3
+	.section__about
+		.swiper-button-prev, .swiper-button-next
+			display: none
+	.stylie_3
+		border-width: 0 80px 90px
+	.swiper__about_slides
+		margin-top: -100px
+	.person__name
+		font-size: 18px
+	.person__profession
+		font-size: 14px
+		margin-bottom: 7px
+	.section__team_bg--1
+		left: 250px
+		bottom: 100px
+	.pesson__avatar
+		img
+			width: 100%
+	.section__team_person
+		margin-bottom: $gutter*2
+	.section__team_persons
+		margin-top: 100px
+	.section__team_persons--row
+		justify-content: space-between
+		margin-bottom: 30px
+	.peson__soc--icon
+		margin: 1px
+	.section__partnership--slider
+		height: 100%
+	.slide__hidden
+		display: none
+	.button--hidden
+		display: block
+		padding: 10px 50px
+	.tabs
+		.slider--title
+			font-size: 18px
+			align-items: flex-end
+			margin-bottom: 0
+	.swiper-horizontal>.swiper-scrollbar
+		top: 30px 
+		margin-bottom: 0 
+	.partnership--slider--navigation
+		margin-top: $gutter
+	.section__help_wrap
+		flex-flow: column nowrap
+	.container
+		padding-left: 10px
+		padding-right: 10px
+	.triangle_6
+		top: 85%
+	.triangle_5
+		top: 10%
+	h2
+		text-align: center
+		font-size: 28px !important
+	.section__help--title
+		height: 100px
+	.section__help--cards
+		align-items: center
+		justify-content: center
+	.section__help--card
+		margin-left: 0
+	.card__star--text
+		line-height: 1.3
+	.section__help--cards
+		position: relative
+		margin-top: -$gutter*4
+	.section__help, .section__team, .section__about, .section__mediaRes, .section__contact, .footer__content
+		margin-top: 120px
+	

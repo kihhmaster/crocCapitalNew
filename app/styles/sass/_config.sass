@@ -1,0 +1,78 @@
+// USER VARIABLES SECTION
+
+$accent: #5E84D2 // Accent Color
+$accent2: #8B3375 // Accent Color
+$fontsize: 16px // Body Font Size
+$textcolor: #333 // Text Color
+$lineheight: 1.65 // Document Line Height
+$userfont: RoadRadio, sans-serif // User Font Family
+$userfont2: Minor, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+@import 'node_modules/swiper/swiper-bundle'
+// FONTS LOAD SECTION
+
+$assetImages: "../images/dist"
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('RoadRadio', Black, 800, '../fonts/RoadRadioBlack.woff2')
+@include font('RoadRadio', Bold, 700, '../fonts/RoadRadioBold.woff2')
+@include font('RoadRadio', Regular, 400, '../fonts/RoadRadioRegular.woff2')
+@include font('RoadRadio', Light, 200, '../fonts/RoadRadioLight.woff2')
+@include font('RoadRadio', Thin, 100, '../fonts/RoadRadioThin.woff2')
+@include font('Minor', Bold, 700, '../fonts/MinorBold.woff2')
+@include font('Minor', Medium, 500, '../fonts/MinorMedium.woff2')
+@include font('Minor', Regular, 400, '../fonts/MinorRegular.woff2')
+@include font('Minor', Light, 200, '../fonts/MinorLight.woff2')
+
+
+// GENERAL CSS SETTINGS
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+a
+	text-decoration: none
+	color: #fff
+	&:hover
+		color: $accent
+		transition: color .1s ease
