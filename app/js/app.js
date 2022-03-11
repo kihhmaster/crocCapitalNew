@@ -1,5 +1,6 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
+require('../app/js/webflow3.min.js') 
 import { Swiper, Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller} from 'swiper'
 Swiper.use([ Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller ])
 document.addEventListener('DOMContentLoaded', () => {
@@ -133,4 +134,22 @@ document.addEventListener('DOMContentLoaded', () => {
 	buttonHidden.addEventListener('click', ()=>{
 		console.log(slideHidden)
 	})
+
+
+	//crocHeader
+
+		
+		// let croc = document.querySelector('.croc-blur')
+		// if(window.innerWidth>900){
+		// 		document.querySelector('.preloader').classList.add('show');
+		// 		croc.innerHTML = '<div class="croc" data-w-id="ee0dfb00-8829-c091-ad03-92e8d1ef2e6e" data-animation-type="lottie" data-src="image/dist/animation.json" data-loop="0" data-direction="1" data-autoplay="0" data-is-ix2-target="1" data-renderer="svg" data-default-duration="2" data-duration="0"></div>\n';
+		// } else {
+		// 		croc.innerHTML = '<img src="images/background.jpg" alt="Background" class="croc-img">\n';
+		// }
+
+		// setTimeout(function(){
+		// 		document.body.classList.add('finish');
+		// },400)
+
+	//crocHeader
 })
